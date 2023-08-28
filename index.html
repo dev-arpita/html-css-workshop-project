@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Laravel From Scratch Blog</title>
 </head>
-<body  class="font-['Open_Sans']">
+<body class="font-['Open_Sans']">
         <section class="py-4 px-6">
             <nav class="flex items-center justify-between">
                 <img src="/assets/logo-dark.svg" alt="laracast logo" class="w-[165px] h-4">
@@ -19,35 +19,106 @@
                 </div>
             </nav>
         </section>
-        <header class="max-w-4xl mx-auto mt-20">
-            <div class="max-w-xl mx-auto text-center ">
-                <h1 class="text-3xl font-bold capitalize ">
-                    latest <span class="text-blue-500">laravel from scratch</span> news
-                </h1>
-                <h2 class="capitalize mt-2">by lary laracon 
-                    <img src="/assets/cute-robot.avif" alt="" class="inline-block rounded-full w-8 h-8">
-                </h2>
-                <p class="mt-14 text-sm">
-                    As you can imagine, Laracasts frequently receives requests for new courses and site features. One feature request in
-                    particular that often pops up is companion written tutorials for every video. It’s not a bad idea! In a perfect world,
-                    this would be a natural and perfect addition to the site. 
-                </p>
-            <div class="mt-4">
-                <span class="inline-block bg-gray-300 rounded-xl py-2 px-5">
-                    <select name="" id="" class="apprearance-none bg-transparent">
-                        <option value="Catagory" disabled selected>Catagory</option>
-                        <option value="personal">Personal</option>
-                        <option value="business">Business</option>
-                    </select>
-                </span>
-                <span>Other Filters</span>
-                <span>Find Something</span>
-            </div>
-            </div>
-        </header>
+        <div class="max-w-6xl mx-auto mt-20">
+            <header class="max-w-xl mx-auto">
+                <div class="text-center">
+                    <h1 class="text-3xl font-bold capitalize ">
+                        latest <span class="text-blue-500">laravel from scratch</span> news
+                    </h1>
+                    <h2 class="capitalize mt-2">by lary laracon
+                        <img src="/assets/cute-robot.avif" alt="" class="inline-block rounded-full w-8 h-8">
+                    </h2>
+                    <p class="mt-14 text-sm">
+                        As you can imagine, Laracasts frequently receives requests for new courses and site features. One feature request in
+                        particular that often pops up is companion written tutorials for every video. It’s not a bad idea! In a perfect world,
+                        this would be a natural and perfect addition to the site.
+                    </p>
+                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                    <!-- category -->
+                    <span class="relative inline-flex items-center bg-gray-200 rounded-xl">
+                        <select class="appearance-none outline-0 bg-transparent py-2 pl-3 pr-9 font-semibold text-sm">
+                            <option value="Category" disabled selected>Category</option>
+                            <option value="personal">Personal</option>
+                            <option value="business">Business</option>
+                        </select>
+                        <svg viewBox="0 0 3 6"
+                            class="absolute right-[12px] transform rotate-90 w-1.5 h-1.5 text-black pointer-events-none">
+                            <path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" stroke-opacity="1" stroke-width="1.5"></path>
+                        </svg>
+                    </span>
+                    <!-- Others filter -->
+                    <span class="relative inline-flex items-center bg-gray-200 rounded-xl">
+                        <select class="appearance-none outline-0 bg-transparent py-2 pl-3 pr-9 font-semibold text-sm">
+                            <option value="Other-Filters" disabled selected>Other Filters</option>
+                            <option value="personal">Bar</option>
+                            <option value="business">Foo</option>
+                        </select>
+                        <svg viewBox="0 0 3 6"
+                            class="absolute right-[12px] transform rotate-90 w-1.5 h-1.5 text-black font-bold pointer-events-none">
+                            <path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" stroke-opacity="1" stroke-width="1.5"></path>
+                        </svg>
+                    </span>
+                        <!-- search -->
+                    <span class="inline-block bg-gray-200 rounded-xl py-2 pl-4 pr-14">
+                        <form action="" method="GET">
+                            <input type="text" placeholder="Find Something?" class="bg-transparent placeholder-black text-sm font-semibold">
+                        </form>
+                    </span>
+                </div>
+                </div>
+            </header>
+            <main>
+                <article class="mt-14 p-5 bg-gray-100 rounded-xl">
+                    <div class="flex gap-6">
+                        <div class="flex-1">
+                            <img src="/assets/wallpaper-blue.jpeg" alt="blog post ilastration" class="rounded-xl h-full object-cover" >
+                        </div>
+                        <div class="flex-1">
+                            <header>
+                                <div class="flex gap-2">
+                                    <a href="#" class="py-1 px-3 border border-blue-300 rounded-full text-[10px] text-blue-300 font-semibold uppercase">techniques</a>
+                                    <a href="#" class="py-1 px-3 border border-red-300 rounded-full text-[10px] text-red-300 font-semibold uppercase">
+                                        updates
+                                    </a>
+                                </div>
+                                <div class="mt-4">
+                                    <h1 class="text-3xl">This is a big title and it will look great two or even three lines. woohooo!</h1>
+                                    <div class="mt-2 text-xs text-gray-400">
+                                        Published <time>1 day ago</time>
+                                    </div>
+                                </div>
+                            </header>
+                            <div class="text-sm mt-5">
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore quam voluptatibus ad consequuntur accusantium, iure omnis! Voluptatibus accusamus repellendus neque sapiente ab aliquam nemo molestias? Rem consequatur repellat consequuntur voluptates.
+                                </p>
+                                <p class="mt-4">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore quam voluptatibus ad consequuntur accusantium, iure
+                                    omnis!
+                                </p>
+                            </div>
+                            <footer class="mt-12 flex items-center justify-between">
+                                <div class="flex items-center gap-2 ">
+                                    <div class="w-10 h-10 rounded-xl shadow-md shadow-blue-950 overflow-hidden">
+                                        <img src="assets/cute-robot.avif" alt="lary mascot" class="w-full">
+                                    </div>
+                                    <div class="">
+                                        <h3 class="font-bold">Lary Laracon</h3>
+                                        <h3>Mascot at laracast</h3>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <a href="#" class="text-xs font-semibold bg-gray-200 rounded-full px-5 py-2">Read More</a>
+                                </div>
 
-        <main>
+                            </footer>
+                        </div>
+                        <div class="">
 
-        </main>
+                        </div>
+                    </div>
+                </article>
+            </main>
+        </div>
 </body>
 </html>
