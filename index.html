@@ -33,9 +33,9 @@
                         particular that often pops up is companion written tutorials for every video. It’s not a bad idea! In a perfect world,
                         this would be a natural and perfect addition to the site.
                     </p>
-                <div class="flex flex-wrap justify-center gap-4 py-8" >
+                <div class="flex flex-col md:inline-flex md:flex-row gap-4 py-8" >
                     <!-- category -->
-                    <div class="relative inline-flex items-center bg-gray-200 rounded-xl">
+                    <span class="relative md:mx-0 mx-4 flex md:inline-flex items-center bg-gray-100 rounded-xl">
                         <select class="flex-1 appearance-none outline-0 bg-transparent py-2 pl-3 pr-9 font-semibold text-sm">
                             <option value="Category" disabled selected>Category</option>
                             <option value="personal">Personal</option>
@@ -45,9 +45,9 @@
                             class="absolute right-[12px] transform rotate-90 w-1.5 h-1.5 text-black pointer-events-none">
                             <path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" stroke-opacity="1" stroke-width="1.5"></path>
                         </svg>
-                    </div>
+                    </span>
                     <!-- Others filter -->
-                    <span class="relative md:inline-flex flex items-center bg-gray-200 rounded-xl">
+                    <span class="relative md:mx-0 mx-4 flex md:inline-flex items-center bg-gray-100 rounded-xl">
                         <select class="flex-1 appearance-none outline-0 bg-transparent py-2 pl-3 pr-9 font-semibold text-sm">
                             <option value="Other-Filters" disabled selected>Other Filters</option>
                             <option value="personal">Bar</option>
@@ -58,20 +58,20 @@
                             <path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" stroke-opacity="1" stroke-width="1.5"></path>
                         </svg>
                     </span>
-                        <!-- search -->
-                    <span class="inline-flex">
+                    <!-- search -->
+                    <span class="relative md:mx-0 mx-4 flex md:inline-flex items-center bg-gray-100 rounded-xl px-3 py-2">
                         <form action="" method="GET">
-                            <div class="bg-gray-200 rounded-xl">
-                                <svg width="16" viewBox="0 0 15 15" class="absolute ml-4 mr-4 mt-3.5">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <path d="M-2-2h20v20H-2z"></path>
-                                        <path class="fill-current"
-                                            d="M10.443 9.232h-.638l-.226-.218A5.223 5.223 0 0 0 10.846 5.6 5.247 5.247 0 1 0 5.6 10.846c1.3 0 2.494-.476 3.414-1.267l.218.226v.638l4.036 4.028 1.203-1.203-4.028-4.036zm-4.843 0A3.627 3.627 0 0 1 1.967 5.6 3.627 3.627 0 0 1 5.6 1.967 3.627 3.627 0 0 1 9.232 5.6 3.627 3.627 0 0 1 5.6 9.232z">
-                                        </path>
-                                    </g>
-                                </svg>
-                                <input type="text" placeholder="Find Something?" class=" relative bg-transparent placeholder-black text-sm font-semibold px-8 pl-10  py-3">
-                            </div>
+                                <label for="search-field">
+                                    <svg width="16" viewBox="0 0 15 15" class="absolute top-0 left-[10px]  mr-4 mt-3.5">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M-2-2h20v20H-2z"></path>
+                                            <path class="fill-current"
+                                                d="M10.443 9.232h-.638l-.226-.218A5.223 5.223 0 0 0 10.846 5.6 5.247 5.247 0 1 0 5.6 10.846c1.3 0 2.494-.476 3.414-1.267l.218.226v.638l4.036 4.028 1.203-1.203-4.028-4.036zm-4.843 0A3.627 3.627 0 0 1 1.967 5.6 3.627 3.627 0 0 1 5.6 1.967 3.627 3.627 0 0 1 9.232 5.6 3.627 3.627 0 0 1 5.6 9.232z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </label>
+                                <input type="text" id="search-field" name="search-field" placeholder="Find Something?" class="outline-0 ml-4 pl-2 pr-4 bg-transparent placeholder-black text-sm font-semibold">
                         </form>
                     </span>
                 </div>
@@ -245,7 +245,7 @@
                     </article>
                 </div>
                 <!-- 3-col grid -->
-                <div class="flex rounded-xl gap-6 flex-wrap">
+                <div class="flex rounded-xl gap-6 flex-wrap pb-12">
                     <article
                         class="flex-1 p-5 transition-colors duration-300  hover:bg-gray-100 border border-opacity-0 hover:border-opacity-5 border-black cursor-pointer rounded-xl">
                         <div class="flex flex-col gap-6">
@@ -253,7 +253,7 @@
                                 <img src="/assets/wallpaper-blue.jpeg" alt="blog post ilastration"
                                     class="rounded-xl h-full object-cover">
                             </div>
-                            <div class="">
+                            <div>
                                 <header>
                                     <div class="flex gap-2">
                                         <a href="#"
@@ -427,7 +427,7 @@
                     </article>
                 </div>
             </main>
-            <footer class="flex text-center flex-col items-center justify-center gap-6 bg-gray-200 border border-opacity-5 border-black cursor-pointer rounded-xl py-16 px-4 lg:px-0 mt-15">
+            <footer class="flex text-center flex-col items-center justify-center gap-6 bg-gray-100 border border-opacity-5 border-black cursor-pointer rounded-xl py-16 px-4 lg:px-0 mt-15">
                 <div class="w-full flex items-center flex-col gap-2">
                     <img src="assets/larydefault.svg" alt="" class="w-16 h-16">
                     <h3 class="text-2xl lg:text-3xl">Stay in touch with the latest posts</h3>
